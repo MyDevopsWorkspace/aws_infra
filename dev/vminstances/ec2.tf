@@ -1,5 +1,5 @@
 module "appvm" {
-  source = "../../modules/vm"
+  source = "git@github.com:MyDevopsWorkspace/terramodules.git//vm?ref=main"
   
   for_each = {for server in local.instances: server.instance_name =>  server}
   ami_id          = each.value.ami

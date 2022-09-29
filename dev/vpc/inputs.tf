@@ -53,6 +53,9 @@ variable "default_tags" {
   type        = map(string)
 }
 
-
+variable "vpc_name" {
+  description = "specify the VPC name"
+  type = string
+}
 
 
